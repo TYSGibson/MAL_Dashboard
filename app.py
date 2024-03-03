@@ -3,12 +3,17 @@ import pandas as pd
 import plotly.express as px
 import streamlit.components.v1 as com
 
-com.html("""
+import streamlit as st
+
+# Define your custom HTML code
+custom_html = """
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7621745427704287"
-     crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7621745427704287"crossorigin="anonymous"></script>
 </head>
-""")
+"""
+
+# Display the custom HTML in your Streamlit app
+st.components.v1.html(custom_html)
 
 stripe_checkout = '<a href = https://buy.stripe.com/14k3cWgSV4Qh7QIbII> Donate Here!</a>'
 
