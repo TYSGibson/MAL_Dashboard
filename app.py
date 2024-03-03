@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd 
 import plotly.express as px
 
+stripe_checkout = 'https://buy.stripe.com/14k3cWgSV4Qh7QIbII'
+
 st.set_page_config(page_title = 'MAL Anime Dashboard',
                    page_icon = ':bar_chart:',
                    layout = 'wide' #sets the windows layout to full screen
@@ -169,5 +171,8 @@ hide_st_style = '''
 '''
 
 st.markdown(hide_st_style, unsafe_allow_html = True)
+
+st.subheader('Enjoyed the work? Consider buying me coffee! 🥰')
+st.markdown(stripe_checkout, unsafe_allow_html = True)
 
 
