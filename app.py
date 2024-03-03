@@ -16,6 +16,7 @@ data = pd.read_csv('./cleaned_data.csv',encoding='unicode_escape')
 custom_html = """
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7621745427704287"crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-7621745427704287">
 </head>
 """
 
