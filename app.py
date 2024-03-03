@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 import plotly.express as px
 
-stripe_checkout = 'https://buy.stripe.com/14k3cWgSV4Qh7QIbII'
+stripe_checkout = '<a href = https://buy.stripe.com/14k3cWgSV4Qh7QIbII> Donate Here!</a>'
 
 st.set_page_config(page_title = 'MAL Anime Dashboard',
                    page_icon = ':bar_chart:',
@@ -172,7 +172,7 @@ hide_st_style = '''
 
 st.markdown(hide_st_style, unsafe_allow_html = True)
 
-st.subheader('Enjoyed the work? Consider buying me coffee! 🥰')
+st.subheader('Enjoyed the work? Consider buying a cup of coffee to support me! 🥰')
 st.markdown(stripe_checkout, unsafe_allow_html = True)
 
 
