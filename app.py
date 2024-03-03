@@ -3,7 +3,14 @@ import pandas as pd
 import plotly.express as px
 import streamlit.components.v1 as com
 
-import streamlit as st
+stripe_checkout = '<a href = https://buy.stripe.com/14k3cWgSV4Qh7QIbII> Donate Here!</a>'
+
+st.set_page_config(page_title = 'MAL Anime Dashboard',
+                   page_icon = ':bar_chart:',
+                   layout = 'wide' #sets the windows layout to full screen
+                   )
+
+data = pd.read_csv('./cleaned_data.csv',encoding='unicode_escape')
 
 # Define your custom HTML code
 custom_html = """
@@ -14,15 +21,6 @@ custom_html = """
 
 # Display the custom HTML in your Streamlit app
 st.components.v1.html(custom_html)
-
-stripe_checkout = '<a href = https://buy.stripe.com/14k3cWgSV4Qh7QIbII> Donate Here!</a>'
-
-st.set_page_config(page_title = 'MAL Anime Dashboard',
-                   page_icon = ':bar_chart:',
-                   layout = 'wide' #sets the windows layout to full screen
-                   )
-
-data = pd.read_csv('./cleaned_data.csv',encoding='unicode_escape')
 
 ## Creating the side bar
 
