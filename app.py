@@ -12,20 +12,8 @@ st.set_page_config(page_title = 'MAL Anime Dashboard',
 
 data = pd.read_csv('./cleaned_data.csv',encoding='unicode_escape')
 
-# Define your custom HTML code
-custom_html = """
-<head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7621745427704287"
-     crossorigin="anonymous"></script>
-<meta name="google-adsense-account" content="ca-pub-7621745427704287">
-</head>
-"""
-
-# Display the custom HTML in your Streamlit app
-st.components.v1.html(custom_html)
 
 ## Creating the side bar
-
 st.sidebar.header("Filter Selection Here:")
 
 # Assuming data is your DataFrame
